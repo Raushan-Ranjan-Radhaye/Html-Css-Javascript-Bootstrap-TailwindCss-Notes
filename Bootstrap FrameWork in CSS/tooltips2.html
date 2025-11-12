@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tooltips2.css">
+
+    <!-- The include the js all file are necessary -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+    // ye javascript ka code hai yaha par ham toggle me likh kar ham ji jo hamko hover kar ne par 
+    // hame kuch message show hoga 
+
+    $(function(){
+        // Indono ka use kar ke ham ek button ko click karnge to message show hoga aur hide button ko click karenge to message hide hoga 
+        
+        // $("#showbtn").click(function(){
+        //     $("#example").tooltip('show');
+        // });
+      
+        // $("#hidebtn").click(function(){
+        //     $("#example").tooltip('hide');
+        // });
+
+
+        // indono ka use karne se ya toggle ka use karne se ek he button se ham click kar ke message ko ham show aur hide kar sate hai 
+        // $("#showbtn").click(function(){
+        //     $("#example").tooltip('toggle');
+        // });
+      
+        // $("#hidebtn").click(function(){
+        //     $("#example").tooltip('hide');
+        // });
+
+        
+
+        // jimein button me ham (dispose) ka use karenge to ek bar click kar ne par vah hamesh ke liya vah disable ho jayega message show nahi karega 
+
+        // $("#showbtn").click(function(){
+        //     $("#example").tooltip('toggle');
+        // });
+      
+        // $("#hidebtn").click(function(){
+        //     $("#example").tooltip('dispose');
+        // });
+
+
+        // enable wala button par click karne par message show hoga ayr disbled button par click kar ne par message show nahi karega ayr phie se enable button par click kar ne par kaam karega 
+        // $("#showbtn").click(function(){
+        //     $("#example").tooltip('enable');
+        // });
+      
+        // $("#hidebtn").click(function(){
+        //     $("#example").tooltip('disable');
+        // });
+
+
+        // (toggleEnabled) Iska use karne se ek bar click kar se enabled hoga aur ek bar click karne par disbled hoga
+        // $("#showbtn").click(function(){
+        //     $("#example").tooltip('toggleEnabled');
+        // });
+      
+        // $("#hidebtn").click(function(){
+        //     $("#example").tooltip('dispose');
+        // });
+
+        <h2>TooltipEvents</h2>
+        // iska use karne se ham button par click karenge to sabse phale alert show hoga 
+        $("#example").on('show.bs.tooltip',function(){
+            alert("show");
+        })
+
+
+        $("#example").on('show.bs.tooltip',function(){
+            alert("Shown");
+        })
+
+
+
+
+
+        // Initialize the tooltip
+        $('#example').tooltip({
+            html: true,
+            title: "<img src='img.png'><h1>Goes Here</h1>"
+        });
+    });
+</script>
+</head>
+<body>
+    <h1>Tooltips Methods</h1>
+<div class="container mb-5">
+    <div class="row py-3">
+        <div class="col-md-7 mx-auto">
+           
+            <button class="btn btn-danger" id="example" title="<img src='img.png'><h1>Goes Here</h1>">Tooltip</button>
+           
+             
+            <button class="btn btn-danger" id="showbtn">Show</button>
+
+
+            <button class="btn btn-primary" id="hidebtn">Hide</button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

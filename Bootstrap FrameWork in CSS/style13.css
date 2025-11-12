@@ -1,0 +1,19 @@
+.container{
+    border:5px solid black;
+}
+/* 
+.nav{ */
+    /* background-color:darkcyan; */
+/* } */
+
+.nav-link{
+    color:black;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    background-color:sandybrown;
+    color: aliceblue;
+}
+
+

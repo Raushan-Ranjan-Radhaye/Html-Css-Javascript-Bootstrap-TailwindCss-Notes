@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tooltips.css">
+
+    <!-- The include the js all file are necessary -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+    // ye javascript ka code hai yaha par ham toggle me likh kar ham ji jo hamko hover kar ne par 
+    // hame kuch message show hoga 
+
+    $(function(){
+        // [data-toggle="tooltip"]iska use ham krte hai ji me hameko sab ko tooltip kar na ho agar particular button ko karna ho to hamko us par isd lagakar nichay likh kar kar skte hai 
+        $('#example').tooltip({
+            // (html:true) iska use kar ne se html actve ho jata hai Title ke ander wala jo Tag hai na waha kaam karega
+            html : true,
+            // (animation : false) iska use karne se hover ker ne par jaldi se how hoga message 
+            animation: false,
+            // (delay)iska use karne se time set ho jayega phir message show hoga 
+            delay : {"show":100,"hide":100},
+            // (placement: "bottom ") iska use kar ne se messagr bottom position me show hoga 
+            placement:"bottom",
+            // hamlog yaha par bhi title me write kr sate jo message show hoga tag likhte hai 
+            title:"<img src='img.png'><br><h2>tooltips</h2>",
+            // (trigger:"click") iska use kar ne se click kar ne par message show hoga
+            trigger:"click",
+            // (offset iska use krne se jo button par message jo show hoga na waha center se hoga )
+            offset : 30
+        });
+    });
+</script>
+</head>
+<body>
+<div class="container mb-5">
+    <div class="row py-3">
+        <div class="col-md-7">
+            <!--(data-placement="top") isme ham postion dal sakte hai jai de left,right,bottom aur top default hota ka system se -->
+            <!-- (title="yah par yah likna hai jo message so karna hai hover kar ne par ") -->
+            <button class="btn btn-primary" id="example">Tooltip</button>
+            <!-- agar hamko tilte me tag ka use karna ho to agarham write karne yo hover kar ne par pura tag ke sath show hoga-->
+            <!-- To ham javascript uper me ko code hai usmein ham (html likh kar usko active karenge) -->
+
+             
+            <button class="btn btn-primary" data-placement="right" title="<h2> tooltips <br>Goes Here</h2>"
+            data-toggle="tooltip">Tooltip</button>
+
+
+
+            <button class="btn btn-primary" data-placement="bottom" title="Tooltip Goes Here"
+            data-toggle="tooltip">Tooltip</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

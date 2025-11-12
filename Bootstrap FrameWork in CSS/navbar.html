@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <div class="container mb-5">
+        <h2 class="py-3 text-center">Bootstrap Navbar Classes</h2>
+        <div class="row py-3">
+            <div class="col">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+                    <a href="#" class="navbar-brand"><img src="image copy.png" width="60px" height="60px">Google</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+                        <!-- navbar-toggle use kar ne se butoon me triangle arrow aa jayega aur click karne par nichay khulaga  -->
+                        <span class="navbar-toggler-icon"></span>
+                    </button> 
+                        <!-- collapse it is used to make the form jisme click karne par navbar open hoga  -->
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">link 1</a>
+                                    <a href="#" class="dropdown-item">link 2</a>
+                                    <a href="#" class="dropdown-item">link 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Malware</a></li>
+                        </ul>
+
+                            <span class="navbar-text">This is testing Text</span>
+
+
+                             <h2>Make the Form</h2>
+                                <form class="form-inline" action="">
+                            <input type="search" class="form-control mr-sm-2" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0">Search</button>
+                        </form>  
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

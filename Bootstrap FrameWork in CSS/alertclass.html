@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="popover plugin.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        // taha javascript ka code hai jo button par click karne par paragraph close hoga 
+        $(function(){
+            $("#closeBtn").click(function(){
+                $("#redbox").alert('close');
+            });
+
+
+            // alert:events
+
+            // ye alert wala use karne se jaise hi ham close wala button par click karenge to 
+            // paragreaph delete nahi hoga phaley alet show hoga alert par ok click kar ne [par messgae delete hog ]
+            $("#redbox").on("close.bs.alert",function(){
+                alert("close");
+            })
+
+            
+            $("#redbox").on("closed.bs.alert",function(){
+                alert("closed");
+            })
+
+        });
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col">
+               <div class="alert alert-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam ducimus minima perferendis! Saepe 
+                reiciendis, vel amet architecto facilis maxime.
+               </div> 
+            </div>
+
+            <div class="col">
+                <div class="alert alert-success">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam ducimus minima perferendis! Saepe 
+                 reiciendis, vel amet architecto facilis maxime.
+                </div> 
+            </div>
+
+            <div class="col">
+                <div class="alert alert-danger">
+                Lorem ipsum dolor sit amet<a href=""> consectetur adipisicing elit. ></a>Nobis magnam ducimus minima perferendis! Saepe 
+                reiciendis, vel amet architecto facilis maxime.
+            </div>
+
+
+                <!-- (alert-link) Is ka use ka ke ham link ka color ka change kar shate hai paragraph ke according-->
+            <div class="col">
+                <div class="alert alert-danger">
+                Lorem ipsum dolor sit amet<a class="alert-link" href=""> consectetur adipisicing elit.></a>Nobis magnam ducimus minima perferendis! Saepe 
+                reiciendis, vel amet architecto facilis maxime.
+            </div>
+
+
+            <!-- (alert-heading) iska use kar ne se pargraph ke anyusr font ka color hoga aut text bold hoga -->
+            <div class="col">
+            <div class="alert alert-danger">
+               <h3 class="alert-heading">Heading Goes Here</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti odio dolores qui ducimus, excepturi eli
+                endi distinctio. Odio repellendus, tempora vero ex dolorem, quo, perspiciatis cum maxime reprehenderit quidem
+                officiis odit architecto. Reprehenderit rem quisquam aspernatur eos! Vitae architecto asperiores in odio ips
+                um provident, qui molestiae voluptatem, quasi voluptates corrupti? Repellat, similique quam? Labore eos ut por
+                o voluptas sed illum illo explicabo asperiores velit, voluptatem animi laboriosam alias, error quisquam molli
+                tia provident adipisci non, molestiae perferendis possimus! Reprehenderit aut ipsum sed. Quas cumque eaque inc
+                ita atque autem perferendis molestiae dignissimos impedit q
+                uo ad, enim ipsam accusamus dolorum voluptatibus distinctio 
+                saepe omnis soluta eum libero. Minima voluptas aliquam odit facere at assumenda rem 
+                voluptate, laboriosam ut? Earum, harum, aut quas qui adipisci voluptate
+                hic maxime consequuntur placeat nesciunt rerum, provident sint nihil.</p>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus minus r
+                eiciendis aliquam ut numquam dignissimos repudiandae corrupti, ab nam ipsa!</p>
+            </div>
+
+
+                                                <!-- Alert button  -->
+
+            <!-- (class="close" data-dismiss="alert") iska use kar ke ham paragraph me close kar option aajayega click karne par pargarph close ho jayega-->
+            <div class="col">
+               <div class="alert alert-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam ducimus minima perferendis! Saepe 
+                reiciendis, vel amet architecto facilis maxime.
+                <button class="close" data-dismiss="alert">
+                    X
+                </button>
+               </div> 
+            </div>
+
+
+            <!-- bhr me button jisko click karne par paragraph close hoga -->
+            <div class="col">
+                <div id="redbox" class="alert alert-danger">
+                   <h3 class="alert-heading">Heading Goes Here</h3>
+                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti odio dolores qui ducimus, excepturi eli
+                    endi distinctio. Odio repellendus, tempora vero ex dolorem, quo, perspiciatis cum maxime reprehenderit quidem
+                    officiis odit architecto. Reprehenderit rem quisquam aspernatur eos! Vitae architecto asperiores in odio ips
+                    um provident, qui molestiae voluptatem, quasi voluptates corrupti? Repellat, similique quam? Labore eos ut por
+                    o voluptas sed illum illo explicabo asperiores velit, voluptatem animi laboriosam alias, error quisquam molli
+                    tia provident adipisci non, molestiae perferendis possimus! Reprehenderit aut ipsum sed. Quas cumque eaque inc
+                    ita atque autem perferendis molestiae dignissimos impedit q
+                    uo ad, enim ipsam accusamus dolorum voluptatibus distinctio 
+                    saepe omnis soluta eum libero. Minima voluptas aliquam odit facere at assumenda rem 
+                    voluptate, laboriosam ut? Earum, harum, aut quas qui adipisci voluptate
+                    hic maxime consequuntur placeat nesciunt rerum, provident sint nihil.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus minus r
+                    eiciendis aliquam ut numquam dignissimos repudiandae corrupti, ab nam ipsa!</p>
+                </div>
+                <button id="closeBtn" class="btn btn-primary">Close</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

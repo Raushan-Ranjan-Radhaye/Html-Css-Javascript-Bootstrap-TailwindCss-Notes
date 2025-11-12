@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="modelplugin.css">
+
+    <style>
+        .carousel-inner h5,
+        .carousel-inner p{
+            color: red;
+            background: wheat;
+        }
+    </style>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+     crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row py-3">
+            <div class="col">
+                <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- (carousel-fade) used to Add yhe effect on image  -->,  
+                    <ol class="carousel-indicators">
+                        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                        <li class="" data-target="#Carousel" data-slide-to="1"></li>
+                        <li class="" data-target="#Carousel" data-slide-to="2"></li>
+
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="1000">
+                            <!-- (data-interval="2000") iska use ham log na pic ka timimg ko set kar me karte hai -->
+                            <img src="image copy.png" alt="photo" class="d-block w-100">
+                            <!-- yaha par ham ko image ke andar likhna ho to div leke kar te hai  -->
+                             <div class="carousel-caption d-none d-md-block">
+                                
+                                <h5 class="">first side label</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                             </div>
+
+                            <h5 class="">first side label</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+                        <div class="carousel-item" data-interval="200">
+                            <img src="image copy.png" alt="photo" class="d-block w-100">
+
+
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                                <h5 class="">first side label</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                             </div>
+
+                            <h5 class="">first side label</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+
+
+                        <div class="carousel-item" data-interval="200">
+                            <img src="image copy.png" alt="photo" class="d-block w-100">
+
+
+                            <div class="carousel-caption d-none d-md-block">
+                                
+                                <h5 class="">first side label</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                             </div>
+
+                            <!-- yaha par ham log image ke sath pic ka information le te hai -->
+                             <!-- ye wala paragraph image ke nichay hoga -->
+                            <h5 class="">first side label</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
