@@ -1,0 +1,45 @@
+div{
+    height: 100px;
+    width: 100px;
+    /* when a cursor move on a div to changes are taken a some time like a 2s,3s, etc */
+    transition-property: all;
+    transition-duration:2s;
+    background-color: aquamarine;
+    border:2px solid black;
+    /* it is break the work in a given instrucation  */
+    /* transition-timing-function:steps(5); */
+/* it used to rotate */
+    /* transform: rotate(45deg); */
+
+}
+
+/* when a cursor move on a div or buttton to change the color */
+div:hover{
+    background-color: red;
+    color: aqua;
+    font-size:20px;
+    /* it is used to bend the element  */
+    transform:skew(45deg);
+}
+/* when a cursor hold down on a div or buttton to see changes just like a color changes or other changes. */
+div:active{
+    background-color: blue;
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

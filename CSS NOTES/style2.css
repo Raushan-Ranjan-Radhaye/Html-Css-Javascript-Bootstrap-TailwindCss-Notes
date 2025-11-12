@@ -1,0 +1,55 @@
+h1{
+    color: blue;
+    text-align: center;
+    text-decoration: overline;
+}
+h2{
+    text-decoration: line-through;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    font-weight: bolder;
+}
+h4{
+    font-weight: lighter;
+}
+#one{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#two{
+    font-family: 'Courier New';
+}
+#three{
+    font-size: 50px;
+}
+#four{
+    font-size:40px;
+}
+#five{
+    font-size: 30px;
+}
+#six{
+    font-size: 25;
+    line-height:2px;
+}
+#seven{
+    line-height:5 ;
+}
+#eight{
+    line-height:10 ;
+}
+#nine{
+    text-transform: capitalize;
+}
+#ten{
+    text-transform: uppercase;
+}
+#eleven{
+    text-transform: lowercase;
+}
+
+#
+
